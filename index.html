@@ -3,61 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>تطبيق شاليهات درة الوادي</title>
+<title>تطبيق درة الوادي</title>
 
 <style>
+
 body{
 font-family:Arial;
-background:#f2f2f2;
+background:#f4f4f4;
 text-align:center;
 padding-top:80px;
-direction:rtl;
 }
 
 .box{
 background:white;
-width:340px;
+width:320px;
 margin:auto;
 padding:30px;
 border-radius:15px;
-box-shadow:0 0 15px rgba(0,0,0,0.1);
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+width:100px;
+margin-bottom:20px;
 }
 
 h1{
 color:#333;
 }
 
-p{
-color:#666;
-}
-
 .btn{
+display:inline-block;
 margin-top:20px;
 background:#28a745;
 color:white;
-padding:15px 30px;
+padding:15px 25px;
 font-size:18px;
-border:none;
 border-radius:8px;
-cursor:pointer;
+text-decoration:none;
 }
 
 .btn:hover{
 background:#218838;
 }
+
 </style>
-
-<script>
-function downloadApp(){
-
-alert("شكراً لتحميلك تطبيق شاليهات درة الوادي \n يرجى الذهاب إلى التحميلات وتثبيته على جهازك");
-
-setTimeout(function(){
-window.location.href="Dur_Wadi.apk";
-},500);
-
-}
-</script>
 
 </head>
 
@@ -65,11 +55,13 @@ window.location.href="Dur_Wadi.apk";
 
 <div class="box">
 
-<h1>تطبيق شاليهات درة الوادي</h1>
+<img src="logo.png" class="logo">
+
+<h1>تطبيق درة الوادي</h1>
 
 <p>احجز الشاليه بسهولة عبر التطبيق</p>
 
-<button class="btn" onclick="downloadApp()">تثبيت التطبيق</button>
+<a class="btn" href="Dur_Wadi.apk">تثبيت التطبيق</a>
 
 </div>
 
