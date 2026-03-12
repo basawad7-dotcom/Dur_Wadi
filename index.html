@@ -12,7 +12,6 @@ font-family:Arial;
 background:#f2f2f2;
 text-align:center;
 padding-top:80px;
-direction:rtl;
 }
 
 .box{
@@ -42,7 +41,6 @@ padding:15px 30px;
 font-size:18px;
 border-radius:8px;
 text-decoration:none;
-cursor:pointer;
 }
 
 .btn:hover{
@@ -52,6 +50,7 @@ background:#218838;
 </style>
 
 <script>
+
 function downloadApp(){
 
 alert("شكراً لتحميلك تطبيق شاليهات درة الوادي\nيرجى الذهاب إلى التحميلات وتثبيته على جهازك");
@@ -59,6 +58,7 @@ alert("شكراً لتحميلك تطبيق شاليهات درة الوادي\n
 window.location.href="Dur_Wadi.apk";
 
 }
+
 </script>
 
 </head>
@@ -71,7 +71,7 @@ window.location.href="Dur_Wadi.apk";
 
 <p>احجز الشاليه بسهولة عبر التطبيق</p>
 
-<button class="btn" onclick="downloadApp()">تثبيت التطبيق</button>
+<a class="btn" href="#" onclick="downloadApp()">تثبيت التطبيق</a>
 
 </div>
 
