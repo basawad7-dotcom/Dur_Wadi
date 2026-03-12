@@ -6,12 +6,12 @@
 <title>تطبيق شاليهات درة الوادي</title>
 
 <style>
-
 body{
 font-family:Arial;
 background:#f2f2f2;
 text-align:center;
 padding-top:80px;
+direction:rtl;
 }
 
 .box{
@@ -25,7 +25,6 @@ box-shadow:0 0 15px rgba(0,0,0,0.1);
 
 h1{
 color:#333;
-margin-bottom:10px;
 }
 
 p{
@@ -33,59 +32,31 @@ color:#666;
 }
 
 .btn{
-display:inline-block;
 margin-top:20px;
 background:#28a745;
 color:white;
 padding:15px 30px;
 font-size:18px;
+border:none;
 border-radius:8px;
-text-decoration:none;
+cursor:pointer;
 }
 
 .btn:hover{
 background:#218838;
 }
-
-/* نافذة الشكر */
-#thanksPopup{
-display:none;
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.5);
-align-items:center;
-justify-content:center;
-}
-
-#thanksBox{
-background:white;
-padding:20px;
-border-radius:10px;
-max-width:300px;
-margin:auto;
-}
-
 </style>
 
 <script>
-
 function downloadApp(){
 
-document.getElementById("thanksPopup").style.display="flex";
+alert("شكراً لتحميلك تطبيق شاليهات درة الوادي \n يرجى الذهاب إلى التحميلات وتثبيته على جهازك");
 
 setTimeout(function(){
 window.location.href="Dur_Wadi.apk";
-},800);
+},500);
 
 }
-
-function closePopup(){
-document.getElementById("thanksPopup").style.display="none";
-}
-
 </script>
 
 </head>
@@ -98,16 +69,8 @@ document.getElementById("thanksPopup").style.display="none";
 
 <p>احجز الشاليه بسهولة عبر التطبيق</p>
 
-<a class="btn" href="#" onclick="downloadApp()">تثبيت التطبيق</a>
+<button class="btn" onclick="downloadApp()">تثبيت التطبيق</button>
 
-</div>
-
-<div id="thanksPopup">
-<div id="thanksBox">
-<p>شكراً لتحميلك تطبيق شاليهات درة الوادي<br>
-يرجى الذهاب إلى التحميلات وتثبيته على جهازك</p>
-<button onclick="closePopup()">حسناً</button>
-</div>
 </div>
 
 </body>
